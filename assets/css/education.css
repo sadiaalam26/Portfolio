@@ -1,16 +1,22 @@
-*{
-    /* background-color: #63cdda; */
+body{
+  background: rgb(236,199,232);
+  background: linear-gradient(0deg, rgba(236,199,232,1) 68%, rgba(19,6,87,1) 100%);
 }
 .rotate{
-    float: right;
-    padding-right: 100px;
+    float: left;
+    position: relative;
+   
     height: 800px;
     width: 600px;
     padding-top: 50px;
+    /* transition: transform 0.8s;
+    transform-style: preserve-3d; */
 }
 
 
-
+/* .rotate:hover {
+  transform: rotateX(180deg);
+} */
 
 .main {
   position: relative;
@@ -19,32 +25,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 400px;
-  background: white;
-  margin-left: 150px;
-  padding: 5vmin;
-  border-radius: 2vmin;
+  width: 350px;
+  height: 350px;
+  background-color: #f6c6d6;
+  background-image: linear-gradient(0deg, #f2afc5 0%, #B5FFFC 100%);
+  
+
+  
+
+  margin-left: 100px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 2vmin; 
 }
 
 .main h2 {
-  font-size: 6vmin;
+  font-size: 4vmin;
   line-height: 110%;
   font-weight: 600;
-  color: black;
+  color: rgb(19, 11, 86);
   text-align: center;
 }
 
 .main p {
-  font-size: 4vmin;
+  font-size: 16px;
   line-height: 150%;
   font-weight: 400;
   color: black;
-  padding-left: 8vmin;
-  border-left: 2px solid rgb(94, 0, 128);
+  padding-left: 8px;
+  border-left: 2px solid rgb(11, 0, 13);
   margin: 6vmin 0;
   width: 100%;
   overflow: hidden;
+  z-index: 3;
 }
 
 .main a {
@@ -75,7 +88,7 @@ a:active {
   height: calc(100% - 2px);
   background: white;
   border-radius: 100%;
-  filter: drop-shadow(15vmin 15vmin 22vmin navy);
+  filter: drop-shadow(15vmin 15vmin 22vmin rgb(6, 3, 57));
   transform-box: fill-box;
   -webkit-transform-box: fill-box;
   transform-origin: center;
