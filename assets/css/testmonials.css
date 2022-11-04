@@ -1,57 +1,38 @@
 body {
     height:auto;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
    
+  }
+
+  h1{
+    text-align: center;
+  }
+  p, h5{
+    background: #F6416C ;
+    background: radial-gradient(circle farthest-corner at center center, #F6416C  0%, #FFF6B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
   }
 
+  .carousel-inner{
+    width: 90% !important;
+  }
 
-
-  /* g-wrap */
-
-
- .g-wrap {
-  margin: auto; 
-display: flex;
-   width: 400px;
-  height: 400px; 
-float: right;
-padding-right: 70px;
-
-}
+  .carousel-item ul li i{
+    color: #F6416C ;
+    
+  }
+  img{
+    /* border: 2px solid transparent; */
+   box-shadow: 1px 3px 20px 10px #e75376;
+  }
   
- 
-
-.g-wrap p {
-  position: relative;
-  width: 800px;
-  font-size: 30px;
-  color: transparent;
-  margin: auto;
-  line-height: 1.5;
-  padding: 10px;
-  background: linear-gradient(-4deg, transparent, transparent 25%, #ffb6ff, #b344ff, transparent 75%, transparent);
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-size: 100% 400%;
-  background-position: center 0;
-  -webkit-animation: textScroll 6s infinite linear alternate;
-          animation: textScroll 6s infinite linear alternate;
-}
-
-@-webkit-keyframes textScroll {
-  100% {
-    background-position: center 100%;
-  }
-}
-
-@keyframes textScroll {
-  100% {
-    background-position: center 100%;
-  }
-}
-
-  /* snow backgound */
+  /* ======================================================================================== */
+  /* snow background */
   
   .snow {
     position: absolute;

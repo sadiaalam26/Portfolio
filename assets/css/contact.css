@@ -5,49 +5,10 @@
 
 
 body{
-    /* The image used */
-  /* background-image: url("/images/workspace-g81bc1a8a5_1920.jpg"); */
-
   /* Full height */
   height: auto;
-  background: linear-gradient(#0d1e3c, #02122d, #000000,#000000, #000000);
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  background: linear-gradient(#0d1e3c, #000000,#000000, #000000);
 
-
-
-
-/* logo style */
-
-.logoStyle{
-  display: inline-block;
-  padding-top: 2px;
-  padding-bottom: 5px;
-  padding-left: 50px;
-  margin-right: 5px;
-  font-size: 65px;
-  line-height: inherit;
-  white-space: nowrap;
-  color: rgb(49, 167, 161);
-  list-style: none;
-  text-decoration: none;
-  text-decoration:solid;
-  font-family: "Sofia";
-  animation: myAnim 2s ease 0s 5 normal forwards;
-}
-@keyframes myAnim {
-0% {
-  opacity: 0;
-  transform: translateX(-250px);
-}
-
-100% {
-  opacity: 1;
-  transform: translateX(0);
-}
 }
 
 
@@ -55,11 +16,11 @@ body{
 
 .contact-div{
   width: 100%;
-  height: 400px;
+  height: 250px;
   padding: 10px;
   margin: 2px;
-  position: inherit;
-  padding: 0px;
+  position: relative;
+  padding: 0px; 
 }
 
 /* images */
@@ -67,25 +28,20 @@ body{
   height: 14rem;
 width: 14erm;
 border-radius: 50%;
-  margin: 1px;
+  margin: 15px;
 float: left;
   box-shadow: 5px 10px 15px  rgb(231, 161, 235);
 }
 
-.laptop-img{
-  float: right;
-  position: relative right;
-  margin: 5px;
-  padding-right: 15px;
-}
+
 
 
 
 
 h3 {
   padding-top: 20px;
-  padding-left: 120px;
-  margin: 60px;
+  padding-left: 50px;
+  /* margin: 20px; */
   /* text-align: center; */
   color: aqua;
   
@@ -94,8 +50,8 @@ h3 {
 p{
  
 
-    padding-left: 120px;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-right: 10px;
     text-align: center;
    
     color: aqua;
@@ -105,7 +61,7 @@ p{
 }
 
 .company-title {
-  padding-left: 120px;
+  padding-left: 60px;
   background: -webkit-linear-gradient(
     120deg,
     var(--primary-color-alt),
@@ -120,18 +76,14 @@ p{
 
 /* h3 span loader m */
 h3.span {
-  font-size: 2vw;
+  font-size: 28px;
   letter-spacing: 0.7em;
   font-family: "ROBOTO", sans-serif;
   font-weight: 300;
   color: #faebd7;
   z-index: 4;
 }
-/* span:hover {
-  color: #ff0266;
-  font-weight: 500;
-  font-size: 2.2vw;
-} */
+
 .loader span {
   color: #faebd7;
   text-shadow: 0 0 0 #faebd7;
@@ -214,7 +166,7 @@ h3.span {
 .footer-style{
 width: 100%;
 height: 70px;
-
+padding: 50px;
 
 }
 
@@ -236,11 +188,12 @@ height: 70px;
 width: 2erm;
 background-color:transparent;
 border-radius: 50%;
+margin: 15px;
 
 
 }
 .up-btn{
-  float:left;
+  float:right;
 
   height: 3rem;
 width: 3erm;
@@ -248,21 +201,35 @@ border-radius: 50%;
 margin-left: 30px;
 margin-top: 20px;
 display: block;
+margin-right: 0px;
 
 
 }
 
 /* form section */
 
+.form-div{
+  padding-top: 15px;
+  position: relative;
+  width: 100%;
+}
 
-
-
+.laptop-img{
+  float: right;
+  right: 0%;
+  left: 50%;
+  position: relative right;
+  margin: 5px;
+  padding-top: 200px;
+  /* padding-right: 15px; */
+}
 
 .login-box {
   position: relative;
-  top: 80%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
   width: 400px;
+  height: auto;
   padding: 30px;
   transform: translate(-50%, -50%);
   background: transparent;
@@ -276,6 +243,7 @@ display: block;
   padding: 0;
   color: #fff;
   text-align: center;
+  color: #03e9f4;
 }
 
 .login-box .user-box {
@@ -302,6 +270,7 @@ display: block;
   color: #fff;
   pointer-events: none;
   transition: .5s;
+  color: #03e9f4;
 }
 
 .login-box .user-box input:focus ~ label,
@@ -456,3 +425,5 @@ display: block;
     transform: translate3d(85px,0,0);
   }
 }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////// */

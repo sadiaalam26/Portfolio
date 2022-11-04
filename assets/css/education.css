@@ -1,27 +1,100 @@
+/* UNIVERSAL SELECTORS */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 body{
+  width: auto;
   background: rgb(236,199,232);
   background: linear-gradient(0deg, rgba(236,199,232,1) 68%, rgba(19,6,87,1) 100%);
 }
-.rotate{
-    float: left;
-    position: relative;
-   
-    height: 800px;
-    width: 600px;
-    padding-top: 50px;
-    /* transition: transform 0.8s;
-    transform-style: preserve-3d; */
+
+/* ==================================================== */
+
+/* captions */
+
+.heading-h1 {
+  font-family: Helvetica;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #6026f3;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
 }
 
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
 
-/* .rotate:hover {
-  transform: rotateX(180deg);
-} */
+/* ================================================== */
+
+
+.rotate{
+  /* float: left; */
+  position: relative;
+ 
+  height: 800px;
+  width: 600px;
+  padding-top: 50px;
+
+}
+
+.work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 650px;
+  height: 350px;
+  background-color: #f6c6d6;
+  background-image: linear-gradient(0deg, #f2afc5 0%, #B5FFFC 100%);
+  margin-left: 100px;
+  /* margin-top: 50px; */
+  padding: 20px;
+  border-radius: 2vmin; 
+}
+.work h2 {
+  font-size: 35px;
+  /* line-height: 100%; */
+  font-weight: 600;
+  color: rgb(19, 11, 86);
+  text-align: right;
+}
+
+.work h3 {
+  font-size: 20px;
+  /* line-height: 100%; */
+  font-weight: 300;
+  color: rgb(19, 11, 86);
+  text-align: right;
+}
+.work h5 {
+  font-size: 16px;
+  /* line-height: 100%; */
+  font-weight: 100;
+  color: rgb(19, 11, 86);
+  text-align: right;
+}
+
+/* ======================================= */
 
 .main {
   position: relative;
   display: flex;
-  /* float: right; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -29,10 +102,6 @@ body{
   height: 350px;
   background-color: #f6c6d6;
   background-image: linear-gradient(0deg, #f2afc5 0%, #B5FFFC 100%);
-  
-
-  
-
   margin-left: 100px;
   margin-top: 50px;
   padding: 20px;
@@ -51,9 +120,9 @@ body{
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
-  color: black;
+  color: rgb(19, 11, 86);
   padding-left: 8px;
-  border-left: 2px solid rgb(11, 0, 13);
+  border-left: 2px solid rgb(6, 18, 77);
   margin: 6vmin 0;
   width: 100%;
   overflow: hidden;
