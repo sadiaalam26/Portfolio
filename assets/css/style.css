@@ -801,7 +801,15 @@ background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
 small
   }
  } */
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(md) { 
+  h1{
+    font-size: 16px;
+  }
+ }
+@include media-breakpoint-up(lg) { 
+  h1{
+    font-size: 16px;
+  }
+ }
 @include media-breakpoint-up(xl) { ... }
 @include media-breakpoint-up(xxl) { ... }
