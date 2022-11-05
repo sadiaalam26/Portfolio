@@ -1,3 +1,13 @@
+/* UNIVERSAL SELECTORS */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 body {
     height:auto;
     background: #000000;  /* fallback for old browsers */
@@ -27,7 +37,6 @@ body {
     
   }
   img{
-    /* border: 2px solid transparent; */
    box-shadow: 1px 3px 20px 10px #e75376;
   }
   
