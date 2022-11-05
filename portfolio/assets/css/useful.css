@@ -1,0 +1,15 @@
+/* box design */
+.card {
+    width: 250px;
+    height: 300px;
+    border: 10px solid;
+    border-image: repeating-linear-gradient(30deg, #ffb87a, #ff85ad, #6b66ff 150px) 1;
+   
+  }
+
+  /* .card :hover{
+    border-image: repeating-linear-gradient(-30deg, #ffb87a, #ff85ad, #6b66ff 75px) 1;
+    ;
+
+  }
+   */
